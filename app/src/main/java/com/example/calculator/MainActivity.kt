@@ -59,9 +59,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addDigit(digit: String) {
-        if (currentInput.isNotEmpty() && currentInput.last().isDigit()) {
-            currentInput = ""
-        }
         currentInput += digit
         updateResult()
     }
